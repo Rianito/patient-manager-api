@@ -55,8 +55,8 @@ class BloodGroup(str, Enum):
     ONegative = "O-"
 
 class PatientBase(BaseModel):
-    weight: Optional[int]
-    height: Optional[int]
+    weight: Optional[float]
+    height: Optional[float]
     blood_group: Optional[BloodGroup]
     email: Optional[EmailStr]
 
